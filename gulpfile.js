@@ -19,5 +19,21 @@ gulp.task('create_binary', () => {
   .bundle()
   .pipe(fs.createWriteStream('./dist/create_binary.js'));
 });
+gulp.task('request_binary', () => {
+  browserify({
+    entries: 'request_binary.js',
+    debug: true
+  })
+  .bundle()
+  .pipe(fs.createWriteStream('./dist/protobufjs/request_binary.js'));
+});
+gulp.task('request_static', () => {
+  browserify({
+    entries: 'request_static.js',
+    debug: true
+  })
+  .bundle()
+  .pipe(fs.createWriteStream('./dist/protobufjs/request_static.js'));
+});
 
-gulp.task('default',['deserialize_binary','create_binary']);
+gulp.task('default',['request_static']);

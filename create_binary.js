@@ -1,5 +1,5 @@
 // var messages = require('./proto3_test_pb');
-var messages = require('./contacts_pb.js');
+var messages = require('protobufjs');
 
 // Function to save the byte array
 var saveByteArray = (function () {

@@ -1,0 +1,12 @@
+{
+    "nested": {
+        "TestMessage" : {
+            "fields": {
+                "Error": {
+                    "type": "string",
+                    "id": 1
+                }
+            }
+        }
+    }
+}

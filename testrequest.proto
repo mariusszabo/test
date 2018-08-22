@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+message TestRequest {
+    string Key = 20;
+    BenchmarkMode Mode = 21;
+}
+
+enum BenchmarkMode {
+    ALL = 0;
+    GeoLocate = 1;
+    KinesisSend = 2;
+    BrowserParser = 3;
+}
