@@ -12,6 +12,7 @@ console.log(testRequest.verify({
     Mode : 1
 }));
 var encodedRequest = testRequest.encode(testRequestMessage).finish();
+debugger;
 
 console.log(testRequest.toObject(testRequest.decode(encodedRequest)));
 // function deserialize(bytes) {

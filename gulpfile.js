@@ -30,7 +30,7 @@ gulp.task('request_binary', () => {
 gulp.task('request_static', () => {
   browserify({
     entries: 'request_static.js',
-    debug: true
+    debug: false
   })
   .bundle()
   .pipe(fs.createWriteStream('./dist/protobufjs/request_static.js'));
